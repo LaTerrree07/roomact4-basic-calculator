@@ -1,17 +1,44 @@
-# lim_calculator
+# My Calculator
 
-A new Flutter project.
+![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=flat&logo=Flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=flat&logo=dart&logoColor=white)
+![Platforms](https://img.shields.io/badge/Platforms-Android%20%7C%20Web-0F766E.svg?style=flat)
+
+A minimalist, responsive basic calculator built with Flutter focusing on state management using `StatefulWidget`, `TextEditingController`, and clean error handling.
+
+## Features & Supported Operations
+
+- **Addition (`+`)**: Computes the sum of two numbers.
+- **Subtraction (`−`)**: Subtracts the second number from the first.
+- **Multiplication (`×`)**: Computes the product of two numbers.
+- **Division (`÷`)**: Divides the first number by the second with zero-division validation (`Cannot divide by zero`).
+- **Input Validation**: Gracefully handles non-numeric or empty input (`Invalid input`).
+- **Clear (`Clear`)**: Resets inputs, calculation labels, and result display to initial state.
+- **Responsive Layout**: Designed for Android and Web with overflow protection.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (v3.13+ or higher)
+- Android Studio / VS Code with Flutter extension
+- An Android device/emulator or modern web browser (Chrome / Edge)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Basic Run Commands
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+# Fetch dependencies
+flutter pub get
+
+# Run on a connected Android device or emulator
+flutter run
+
+# Run in Chrome (Web)
+flutter run -d chrome
+
+# Run automated widget tests
+flutter test
+
+# Run static analysis
+flutter analyze
+```
